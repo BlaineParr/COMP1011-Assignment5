@@ -58,7 +58,7 @@ public class MainActivity extends Activity {
 				//local variables
 				double heightValue = 0;
 				double weightValue = 0;
-				Double bmiValue = 0.0;
+				double bmiValue = 0.0;
 				
 				try {
 					heightValue = Double.parseDouble(HEIGHT_EDIT_TEXT.getText().toString());
@@ -74,7 +74,7 @@ public class MainActivity extends Activity {
 				else {
 					bmiValue = (weightValue * 703) / (heightValue * heightValue);
 				} //else ends
-				BMI_EDIT_TEXT.setText("BMI: " + bmiValue);
+				BMI_EDIT_TEXT.setText(String.format("%.2f", bmiValue));
 			} //method onClick ends
 		});
     } //method onCreate ends
