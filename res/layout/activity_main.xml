@@ -1,9 +1,16 @@
+<!-- 
+This xml contains the layout for the BMI application.
+
+Author: Blaine Parr
+Date: April 3, 2015
+ -->
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/tableLayout"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
+    <!-- layout for the unitsTextButton and unitsButton -->
     <TableRow
         android:id="@+id/unitsRow"
         android:layout_width="wrap_content"
@@ -15,8 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:padding="5dp"
-            android:text="Units: Imperial System"
-            android:textSize="14sp"
+            android:text="@string/units"
             android:width="40dp" />
 
         <Button
@@ -24,11 +30,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
-            android:text="Switch Units"
+            android:text="@string/switchUnits"
             android:width="40dp" />
 
     </TableRow>
 
+    <!-- layout for the heightTextView and heightEditText -->
     <TableRow
         android:id="@+id/heightRow"
         android:layout_width="wrap_content"
@@ -40,7 +47,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:padding="5dp"
-            android:text="My Height" />
+            android:text="@string/myHeight" />
 
         <EditText
             android:id="@+id/heightEditText"
@@ -48,13 +55,14 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:ems="10"
-            android:hint="Height in Metres"
+            android:hint="@string/heightInMetres"
             android:inputType="numberDecimal"
             android:padding="5dp" >
 
         </EditText>
     </TableRow>
 
+    <!-- layout for the weightTextView and weightEditText -->
     <TableRow
         android:id="@+id/weightRow"
         android:layout_width="wrap_content"
@@ -66,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:padding="5dp"
-            android:text="My Weight" />
+            android:text="@string/myWeight" />
 
         <EditText
             android:id="@+id/weightEditText"
@@ -74,12 +82,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:ems="10"
-            android:hint="Weight in Kilograms"
+            android:hint="@string/weightInKilograms"
             android:inputType="numberDecimal"
             android:padding="5dp" />
 
     </TableRow>
 
+    <!-- layout for the calculateBMIButton -->
     <TableRow
         android:id="@+id/calculateRow"
         android:layout_width="wrap_content"
@@ -90,10 +99,10 @@
             android:id="@+id/calculateBMIButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0"
-            android:text="Calculate BMI" />
+            android:text="@string/calculateBMI" />
     </TableRow>
 
+    <!-- layout for the bmiTextView and bmiEditText -->
     <TableRow
         android:id="@+id/bmiRow"
         android:layout_width="wrap_content"
@@ -105,10 +114,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:padding="5dp"
-            android:text="BMI" />
+            android:text="@string/bmi" />
 
         <EditText
             android:id="@+id/bmiEditText"
+            android:labelFor="@+id/bmiEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -116,12 +126,12 @@
             android:cursorVisible="false"
             android:ems="10"
             android:focusable="false"
-            android:focusableInTouchMode="false"
-            android:inputType="numberDecimal"
-            android:padding="5dp" />
+            android:inputType="numberDecimal" >
+        </EditText>
 
     </TableRow>
 
+    <!-- layout for the bmiScaleTextView and resultTextView -->
     <TableRow
         android:id="@+id/scaleRow1"
         android:layout_width="wrap_content"
@@ -134,7 +144,7 @@
             android:layout_weight="2"
             android:background="#666666"
             android:padding="5dp"
-            android:text="BMI SCALE"
+            android:text="@string/bmiScale"
             android:textColor="#FFFFFF" />
 
         <TextView
@@ -144,11 +154,12 @@
             android:layout_weight="2"
             android:background="#666666"
             android:padding="5dp"
-            android:text="RESULT"
+            android:text="@string/result"
             android:textColor="#FFFFFF" />
 
     </TableRow>
 
+    <!-- layout for the underweightTextView and underweightResultTextView -->
     <TableRow
         android:id="@+id/scaleRow2"
         android:layout_width="wrap_content"
@@ -161,7 +172,7 @@
             android:layout_weight="2"
             android:background="#999999"
             android:padding="5dp"
-            android:text="Underweight" />
+            android:text="@string/underweight" />
 
         <TextView
             android:id="@+id/underweightResultTextView"
@@ -170,10 +181,11 @@
             android:layout_weight="2"
             android:background="#999999"
             android:padding="5dp"
-            android:text="Less than 18.5" />
+            android:text="@string/lessThan185" />
 
     </TableRow>
 
+    <!-- layout for the normalTextView and normalResultTextView -->
     <TableRow
         android:id="@+id/scaleRow3"
         android:layout_width="wrap_content"
@@ -186,7 +198,7 @@
             android:layout_weight="2"
             android:background="#AAAAAA"
             android:padding="5dp"
-            android:text="Normal" />
+            android:text="@string/normal" />
 
         <TextView
             android:id="@+id/normalResultTextView"
@@ -195,10 +207,11 @@
             android:layout_weight="2"
             android:background="#AAAAAA"
             android:padding="5dp"
-            android:text="Between 18.5 and 24.9" />
+            android:text="@string/between185And249" />
 
     </TableRow>
 
+    <!-- layout for the overweightTextView and overweightResultTextView -->
     <TableRow
         android:id="@+id/scaleRow4"
         android:layout_width="wrap_content"
@@ -211,7 +224,7 @@
             android:layout_weight="2"
             android:background="#999999"
             android:padding="5dp"
-            android:text="Overweight" />
+            android:text="@string/overweight" />
 
         <TextView
             android:id="@+id/overweightResultTextView"
@@ -220,10 +233,11 @@
             android:layout_weight="2"
             android:background="#999999"
             android:padding="5dp"
-            android:text="Between 25 and 29.9" />
+            android:text="@string/between25And299" />
 
     </TableRow>
 
+    <!-- layout for the obeseTextView and obeseResultTextView -->
     <TableRow
         android:id="@+id/scaleRow5"
         android:layout_width="wrap_content"
@@ -236,7 +250,7 @@
             android:layout_weight="2"
             android:background="#AAAAAA"
             android:padding="5dp"
-            android:text="Obese" />
+            android:text="@string/obese" />
 
         <TextView
             android:id="@+id/obeseResultTextView"
@@ -245,7 +259,22 @@
             android:layout_weight="2"
             android:background="#AAAAAA"
             android:padding="5dp"
-            android:text="30 or greater" />
+            android:text="@string/thirtyOrGreater" />
+
+    </TableRow>
+
+    <!-- layout for the resetButton -->
+    <TableRow
+        android:id="@+id/resetRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reset" />
 
     </TableRow>
 

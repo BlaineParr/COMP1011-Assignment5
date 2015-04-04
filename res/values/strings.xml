@@ -4,5 +4,24 @@
     <string name="app_name">BMI Calculator</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="units">Units: Imperial System</string>
+    <string name="switchUnits">Switch Units</string>
+    <string name="myHeight">My Height</string>
+    <string name="heightInMetres">Height in Metres</string>
+    <string name="myWeight">My Weight</string>
+    <string name="weightInKilograms">Weight in Kilograms</string>
+    <string name="calculateBMI">Calculate BMI</string>
+    <string name="bmi">BMI</string>
+    <string name="bmiScale">BMI SCALE</string>
+    <string name="result">RESULT</string>
+    <string name="lessThan185">Less than 18.5</string>
+    <string name="normal">Normal</string>
+    <string name="between185And249">Between 18.5 and 24.9</string>
+    <string name="overweight">Overweight</string>
+    <string name="between25And299">Between 25 and 29.9</string>
+    <string name="obese">Obese</string>
+    <string name="thirtyOrGreater">30 or greater</string>
+    <string name="reset">Reset</string>
+    <string name="underweight">Underweight</string>
 
 </resources>
