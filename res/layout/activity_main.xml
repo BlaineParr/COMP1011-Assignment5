@@ -48,8 +48,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:ems="10"
+            android:hint="Height in Metres"
             android:inputType="numberDecimal"
             android:padding="5dp" >
+
         </EditText>
     </TableRow>
 
@@ -72,8 +74,10 @@
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:ems="10"
+            android:hint="Weight in Kilograms"
             android:inputType="numberDecimal"
             android:padding="5dp" />
+
     </TableRow>
 
     <TableRow

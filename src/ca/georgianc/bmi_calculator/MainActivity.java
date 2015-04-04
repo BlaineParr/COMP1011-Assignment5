@@ -38,14 +38,21 @@ public class MainActivity extends Activity {
 					//change the text to display that it is now in metric
 					UNITS_TEXT_VIEW.setText("Units: Metric System");
 					_unitsImperial = false; //set unitsImperial to false
+					
+					//set the hints to inches and pounds
+					HEIGHT_EDIT_TEXT.setHint("Height in Inches");
+					WEIGHT_EDIT_TEXT.setHint("Weight in Pounds");
 				} //if ends
 				//if the units are not currently imperial...
 				else {
 					//change the text to display that it is now in imperial
 					UNITS_TEXT_VIEW.setText("Units: Imperial System");
 					_unitsImperial = true; //set unitsImperial to true
+					
+					//set the hints to metres and kilograms
+					HEIGHT_EDIT_TEXT.setHint("Height in Metres");
+					WEIGHT_EDIT_TEXT.setHint("Weight in Kilograms");
 				} //else ends
-				
 			} //method onClick ends
 		});
         
