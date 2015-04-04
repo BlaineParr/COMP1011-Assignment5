@@ -5,10 +5,9 @@
     android:layout_height="fill_parent" >
 
     <TableRow
-        android:id="@+id/tableRow1"
+        android:id="@+id/unitsRow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="5dip" >
+        android:layout_height="wrap_content" >
 
         <TextView
             android:id="@+id/unitsTextView"
@@ -27,11 +26,10 @@
             android:layout_weight="2"
             android:text="Switch Units"
             android:width="40dp" />
-
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow2"
+        android:id="@+id/heightRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -51,12 +49,11 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:padding="5dp" >
-
         </EditText>
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow3"
+        android:id="@+id/weightRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -76,23 +73,24 @@
             android:ems="10"
             android:inputType="numberDecimal"
             android:padding="5dp" />
-
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow4"
+        android:id="@+id/calculateRow"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:gravity="center" >
 
         <Button
             android:id="@+id/calculateBMIButton"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:text="Calculate BMI" />
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow5"
+        android:id="@+id/bmiRow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
@@ -115,16 +113,113 @@
     </TableRow>
 
     <TableRow
-        android:id="@+id/tableRow6"
+        android:id="@+id/scaleRow1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" >
 
-        <EditText
-            android:id="@+id/editText1"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/bmiScaleTextView"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textMultiLine" />
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="BMI SCALE" />
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="RESULT" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/scaleRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/underweightTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Underweight" />
+
+        <TextView
+            android:id="@+id/underweightResultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Less than 18.5" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/scaleRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/normalTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Normal" />
+
+        <TextView
+            android:id="@+id/normalResultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Between 18.5 and 24.9" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/scaleRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/overweightTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Overweight" />
+
+        <TextView
+            android:id="@+id/overweightResultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Between 25 and 29.9" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/scaleRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/obeseTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="Obese" />
+
+        <TextView
+            android:id="@+id/obeseResultTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:padding="5dp"
+            android:text="30 or greater" />
     </TableRow>
 
 </TableLayout>
